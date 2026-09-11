@@ -211,8 +211,8 @@ div{
     margin-bottom: 0;
 }
 
-.underline, .underline-box4{
-    margin-left: 48%;
+.underline-box3{
+    margin-left: 150px;
     margin-top: -1;
     width: 70px;
     background: linear-gradient(135deg, #5865F2, #8B5CF6);
@@ -252,11 +252,6 @@ div{
     height: 80px;
 }
 
-.header-box3{
-    flex:1;
-    margin-top: 5%;
-}
-
 .github, .linkin, .instagram{
     object-fit: fill;
     height: 80px;
@@ -265,7 +260,7 @@ div{
     margin-left: 8px;
 }
 
-.header-box4{
+.header-box4, .header-box3{
     flex: 1;
     vertical-align: middle;
 }
@@ -442,10 +437,6 @@ div{
         margin-top: 50px;
     }
 
-    .underline {
-        margin-left: 190px;
-    }
-
     .skills1 {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -468,6 +459,9 @@ div{
     .box4 {
         padding: 40px 20px;
         box-sizing: border-box;
+        margin-bottom: 100px;
+        padding-left: 0;
+        padding-right: 0;
     }
 
     .logo {
@@ -507,14 +501,5 @@ div{
 
     .instagram, .github, .linkin{
         margin-left: 0px;
-    }
-
-    .underline-box4{
-        margin-left: 170px;
-        margin-top: 0px;
-    }
-
-    .subtitle-box4{
-        margin-bottom: 0px;
     }
 }
