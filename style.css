@@ -314,7 +314,7 @@ div{
     font-weight: bold;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 412px) {
     .container{
         grid-template-areas: 
         "header"
