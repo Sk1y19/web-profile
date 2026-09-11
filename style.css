@@ -1,0 +1,116 @@
+p{
+    font-family: Inter, sans-serif;
+    color: white;
+    margin-left: 90px;
+}
+
+body{
+    padding-top: 110px;
+    background-color: rgb(2 8 23);
+    margin-bottom: 100000px;
+}
+
+.header{
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 100px;
+    color: rgb(200 41 9);
+    background-color: rgb(2 8 23);
+    align-items: center;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(27, 27, 27);
+}
+
+.box1{
+   background-color: rgb(2 8 23);
+    color:white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-button{
+    background-color: rgb(2 8 23);
+    color:rgb(199 202 212);
+    border: none;
+    font-size: 20px;
+    margin-left: 50px;
+    font-weight: 200px;
+    cursor: pointer;
+}
+
+.header-button:active{
+    color: rgb(245 245 247);
+    border-bottom-color: rgb(38, 15, 121);
+}
+
+.name{
+    font-size: 55px;
+    width: 820px;
+    font-weight: 800;
+    line-height: 80px;
+    margin-bottom: 10px;
+}
+
+.name2, .yafi{
+    font-size: 60px;
+}
+
+.yafi{
+     background: linear-gradient(135deg, #5865F2, #8B5CF6);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.picture{
+    border-radius: 100%;
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+}
+
+.box1-desc{
+    font-size: 20px;
+    width: 820px;
+    line-height: 35px;
+    color: rgb(180, 180, 180);
+}
+
+.cv{
+    border: white;
+    border-style: solid;
+    color: white;
+    background-color: transparent;
+    margin-left: 90px;
+    margin-top: 100px;
+    text-align: center;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 25px;
+    border-radius: 5px;
+    border-width: 1px;
+    font-weight: 50;
+}
+
+.box2{
+    display: flex;
+    background-color: rgb(4 11 27);
+    margin-top: 70px;
+}
+
+.aboutme{
+    color: rgb(169, 138, 241);
+    background-color: rgba(36, 32, 59, 0.281);
+    text-align: center;
+    width: 90px;
+    padding: 5px;
+    font-size: 15px;
+    font-weight: 500;
+}
