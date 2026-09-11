@@ -1,3 +1,4 @@
+
 p{
     font-family: Inter, sans-serif;
     color: white;
@@ -304,11 +305,23 @@ div{
     color: white;
     margin-top: 0;
     font-size: 25px;
-    font-weight: ;
+    font-weight: bold;
     display: inline-block;
 }
 
 .btn:hover span {
     opacity: 1;
     font-weight: bold;
+}
+
+@media (max-width: 900px) {
+    .container{
+        grid-template-areas: 
+        "header"
+        "box1"
+        "box2"
+        "box3"
+        "box4";
+        grid-template-columns: 1fr;
+    }
 }
