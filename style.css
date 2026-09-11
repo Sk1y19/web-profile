@@ -212,7 +212,7 @@ div{
 }
 
 .underline-box3{
-    margin-left: 150px;
+    margin-left: 350px;
     margin-top: -1;
     width: 70px;
     background: linear-gradient(135deg, #5865F2, #8B5CF6);
@@ -501,5 +501,13 @@ div{
 
     .instagram, .github, .linkin{
         margin-left: 0px;
+    }
+
+    .underline-box3 {
+        margin-left: 150px;
+        margin-top: -1;
+        width: 70px;
+        background: linear-gradient(135deg, #5865F2, #8B5CF6);
+        border: none;
     }
 }
