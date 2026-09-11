@@ -257,17 +257,59 @@ div{
     margin-top: 5%;
 }
 
-.img-contact{
-    object-fit: cover;
+.github, .linkin, .instagram{
+    object-fit: fill;
+    height: 80px;
+    width: 80px;
+    flex-shrink: 0;
+    margin-left: 8px;
 }
 
 .header-box4{
     flex: 1;
+    vertical-align: middle;
 }
 
-.btn{
+.btn {
+    display: flex;              
+    align-items: center;       
+    padding-left: 25px;        
     margin-left: 200px;
     border-radius: 100%;
-    width: max-content;
-    height: max-content;
+    cursor: pointer;
+    width: 150px;
+    height: 150px;
+    overflow: hidden;          
+    transition: width 0.3s, border-radius 0.3s ease, background-color 0.15s;
+}
+
+.btn:active{
+    background-color: #626697;
+}
+
+.logo{
+    grid-template-columns: 1fr;
+    vertical-align: middle;
+}
+
+.btn:hover {
+    width: 400px;
+    border-radius: 300px;
+    justify-content: flex-start;
+}
+
+.btn span{
+    margin-left: 25px;
+    white-space: nowrap;
+    opacity: 0;
+    color: white;
+    margin-top: 0;
+    font-size: 25px;
+    font-weight: ;
+    display: inline-block;
+}
+
+.btn:hover span {
+    opacity: 1;
+    font-weight: bold;
 }
