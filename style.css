@@ -7,7 +7,25 @@ p{
 body{
     padding-top: 110px;
     background-color: rgb(2 8 23);
-    margin-bottom: 100000px;
+    margin-bottom: 1000px;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+@keyframes appear{
+    from{
+        opacity: 0;
+        scale: 0.5;
+    }to{
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+div{
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
 }
 
 .header{
@@ -24,6 +42,7 @@ body{
     border-bottom-width: 1px;
     border-bottom-style: solid;
     border-bottom-color: rgb(27, 27, 27);
+    z-index: 1000;
 }
 
 .box1{
@@ -41,6 +60,12 @@ body{
     margin-left: 50px;
     font-weight: 200px;
     cursor: pointer;
+    transition: color 0.15s, transform 0.15s;
+}
+
+.header-button:hover{
+    color: white;
+    transform: scale(1.35);
 }
 
 .header-button:active{
@@ -48,16 +73,22 @@ body{
     border-bottom-color: rgb(38, 15, 121);
 }
 
-.name{
+.name, .name2{
     font-size: 55px;
-    width: 820px;
+    width: 500px;
     font-weight: 800;
     line-height: 80px;
     margin-bottom: 10px;
 }
 
+.name{
+    margin-top: 0px;
+    width: 600px;
+}
+
 .name2, .yafi{
     font-size: 60px;
+    margin-bottom: 0;
 }
 
 .yafi{
@@ -68,17 +99,21 @@ body{
 }
 
 .picture{
+    flex: 1;
     border-radius: 100%;
     width: 500px;
     height: 500px;
     object-fit: cover;
+    margin-right: 10px;
 }
 
 .box1-desc{
+    flex: 1;
     font-size: 20px;
     width: 820px;
     line-height: 35px;
     color: rgb(180, 180, 180);
+    width: 700px;
 }
 
 .cv{
@@ -86,8 +121,8 @@ body{
     border-style: solid;
     color: white;
     background-color: transparent;
-    margin-left: 90px;
-    margin-top: 100px;
+    margin-left: 250px;
+    margin-top: 90px;
     text-align: center;
     padding-right: 30px;
     padding-left: 30px;
@@ -97,12 +132,36 @@ body{
     border-radius: 5px;
     border-width: 1px;
     font-weight: 50;
+    cursor: pointer;
 }
 
-.box2{
+.download-img{
+    height: 25px;
+    vertical-align: middle;
+    margin-left: 19px;
+}
+
+.cv:hover{
+    background: linear-gradient(135deg, #5865F2, #8B5CF6);
+    color: white;
+    border: none;
+}
+
+.cv:active{
+    opacity: 80%;
+}
+
+.box2, .box4{
     display: flex;
     background-color: rgb(4 11 27);
     margin-top: 70px;
+    padding-bottom: 50px;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.container-box2{
+    flex: 1;
 }
 
 .aboutme{
@@ -110,7 +169,95 @@ body{
     background-color: rgba(36, 32, 59, 0.281);
     text-align: center;
     width: 90px;
-    padding: 5px;
+    padding: 10px;
     font-size: 15px;
     font-weight: 500;
+    margin-top: 50px;
+    margin-bottom: 30px;
 }
+
+.desc2{
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48px;
+    width: 900px;
+    margin-bottom: 20px;
+}
+
+.desc2-1{
+    color: rgb(201, 201, 201);
+    font-size: 20px;
+    width: 900px;
+    line-height: 40px;
+}
+
+.title-box3{
+    text-align: center;
+    margin-top: 100px;
+    margin-left: 0;
+    color: rgb(122, 99, 175);
+    font-size: 30px;
+    margin-bottom: 10px;
+    font-weight: bolder;
+}
+
+.subtitle-box3{
+    text-align: center;
+    margin-top: 70px;
+    margin-left: 0;
+    color: rgb(255, 255, 255);
+    font-size: 60px;
+    margin-top: 0px;
+    margin-bottom: 0;
+}
+
+.underline{
+    margin-left: 48%;
+    margin-top: -1;
+    width: 70px;
+    background: linear-gradient(135deg, #5865F2, #8B5CF6);
+    border: none;
+}
+
+.skills1{
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 4, 3;
+    gap: 50px;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+
+.skill, .btn{
+    background-color: transparent;
+    border-style: solid;
+    border-color:#3b4288;
+    border-radius: 10px;
+    padding: 10px;
+    display: inline-block;
+    height: 150px;
+    width: 150px;
+    background-color: #3b418828;
+    transition: transform 0.15s, color 0.15s;
+}
+
+.skill:hover, .btn:hover{
+    transform: scale(1.05);
+    background-color: #3b4288;
+}
+
+.img-skill, .img-contact{
+    height: 75px;
+    width: 75px;
+    object-fit: fill;
+}
+
+
+
+.img-contact{
+    object-fit: cover;
+}
+
