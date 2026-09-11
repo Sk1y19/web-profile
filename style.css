@@ -45,7 +45,7 @@ div{
     z-index: 1000;
 }
 
-.box1{
+.box1, .box3{
    background-color: rgb(2 8 23);
     color:white;
     display: flex;
@@ -219,7 +219,7 @@ div{
     border: none;
 }
 
-.skills1{
+.skills1, .logo{
     margin-top: 100px;
     display: grid;
     grid-template-columns: 4, 3;
@@ -229,6 +229,7 @@ div{
     margin-left: auto;
     margin-right: auto;
     margin-top: 50px;
+    flex: 1;
 }
 
 .skill, .btn{
@@ -238,8 +239,8 @@ div{
     border-radius: 10px;
     padding: 10px;
     display: inline-block;
-    height: 150px;
-    width: 150px;
+    height: 200px;
+    width: 200px;
     background-color: #3b418828;
     transition: transform 0.15s, color 0.15s;
 }
@@ -250,14 +251,25 @@ div{
 }
 
 .img-skill, .img-contact{
-    height: 75px;
-    width: 75px;
-    object-fit: fill;
+    height: 80px;
 }
 
-
+.header-box3{
+    flex:1;
+    margin-top: 5%;
+}
 
 .img-contact{
     object-fit: cover;
 }
 
+.header-box4{
+    flex: 1;
+}
+
+.btn{
+    margin-left: 200px;
+    border-radius: 100%;
+    width: max-content;
+    height: max-content;
+}
