@@ -226,8 +226,6 @@ div{
     gap: 50px;
     grid-template-columns: 1fr 1fr 1fr;
     width: max-content;
-    margin-left: auto;
-    margin-right: auto;
     margin-top: 50px;
     flex: 1;
 }
