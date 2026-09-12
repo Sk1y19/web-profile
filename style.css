@@ -215,14 +215,6 @@ div{
     margin-bottom: 0;
 }
 
-.underline-box3{
-    margin-left: 440px;
-    margin-top: -1;
-    width: 70px;
-    background: linear-gradient(135deg, #5865F2, #8B5CF6);
-    border: none;
-}
-
 .skills1, .logo{
     margin-top: 100px;
     display: grid;
@@ -310,6 +302,17 @@ div{
 .btn:hover span {
     opacity: 1;
     font-weight: bold;
+}
+
+.subtitle-box3::after, .subtitle-box4::after{
+  content: '';
+  position: absolute;
+  bottom: -10px;      
+  left: 45%;             
+  width: 10%;           
+  height: 3px;           
+  background-color: #7b61ff; 
+  border-radius: 2px;
 }
 
 @media (max-width: 768px) {
@@ -505,12 +508,5 @@ div{
     .instagram, .github, .linkin{
         margin-left: 0px;
     }
-
-    .underline-box3 {
-        margin-left: 150px;
-        margin-top: -1;
-        width: 70px;
-        background: linear-gradient(135deg, #5865F2, #8B5CF6);
-        border: none;
-    }
 }
+
