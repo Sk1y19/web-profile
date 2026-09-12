@@ -52,6 +52,10 @@ div{
     justify-content: space-between;
 }
 
+.box3, .box4{
+    align-items: center;
+}
+
 .header-button{
     background-color: rgb(2 8 23);
     color:rgb(199 202 212);
@@ -92,7 +96,7 @@ div{
 }
 
 .yafi{
-     background: linear-gradient(135deg, #5865F2, #8B5CF6);
+     background: linear-gradient(135deg,#ffbb00, #c26f03);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
@@ -233,7 +237,7 @@ div{
 .skill, .btn{
     background-color: transparent;
     border-style: solid;
-    border-color:#3b4288;
+    border: none;
     border-radius: 10px;
     padding: 10px;
     display: inline-block;
@@ -262,7 +266,6 @@ div{
 
 .header-box4, .header-box3{
     flex: 1;
-    vertical-align: middle;
 }
 
 .btn {
