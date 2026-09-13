@@ -441,6 +441,8 @@ div{
     .title-box3 {
         font-size: 22px;
         margin-top: 50px;
+        text-align: center;
+        margin-right: 0%;
     }
 
     .skills1 {
@@ -491,7 +493,7 @@ div{
     }
 
     .btn:hover {
-        width: 280px;
+        width: 290px;
     }
 
     .img-contact {
@@ -508,5 +510,6 @@ div{
     .instagram, .github, .linkin{
         margin-left: 0px;
     }
+    
 }
 
